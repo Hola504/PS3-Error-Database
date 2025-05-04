@@ -1,0 +1,128 @@
+Base de Datos de Errores del Sistema PS3
+
+BSOD (Blue Screen of Death)
+
+Cómo provocarlo: Corromper el archivo de respaldo xRegistry.sys en dev_flash2/etc/backup/ (eliminando líneas de texto) y eliminar el archivo original en dev_flash2/etc/.
+
+
+BSOD Grave
+
+Cómo provocarlo: Borrar libuserdatanv.sprx (o similar) en dev_flash/sys/external/.
+
+
+RSOD (Red Screen of Death)
+
+Cómo provocarlo en PS3 real: Eliminar vsh.self en dev_flash/vsh/module.
+
+Nota: No es posible replicar este error en RPCS3.
+
+
+"A serious error has occurred"
+
+Cómo provocarlo en RPCS3: Corromper sys_init_osd.self en dev_flash/vsh/module.
+
+Nota: Muy relacionado con el RSOD.
+
+
+"No se puede iniciar, no se encontró un disco duro apropiado"
+
+Cómo provocarlo en PS3 real: Retirar físicamente el HDD/SSD.
+
+Cómo provocarlo en RPCS3: Corromper archivos que lean desde dev_hdd0 (no garantizado).
+
+
+RSOD Grave
+
+Estado: No se conoce el método exacto para provocarlo.
+
+Descripción: Se cree que casi todos los archivos importantes están corruptos, excepto el XMB.
+
+
+"Los archivos del disco duro están corruptos y se recuperarán"
+
+Cómo provocarlo en RPCS3: Borrar dev_hdd0.
+
+En PS3 real: Corromper archivos dentro de dev_hdd0 o formatear mal el HDD/SSD.
+
+
+"Datos corruptos"
+
+Cómo provocarlo: Corromper el archivo EBOOT.BIN de una aplicación específica.
+
+
+YLOD (Yellow Light of Death)
+
+Descripción: Fallo físico del CPU/GPU por desoldado. No replicable en RPCS3.
+
+
+GLOD (Green Light of Death)
+
+Descripción: Similar al YLOD, pero menos severo.
+
+
+GARLOD
+
+Descripción: Relacionado con sobrecalentamiento extremo o daños similares a YLOD. Aparece una luz roja intermitente.
+
+
+Semi-Brick
+
+Cómo sucede: Al fallar una actualización o corromper archivos no esenciales. No muestra "A serious error has occurred".
+
+
+Full Brick
+
+Descripción: Daño total del sistema, puede incluir YLOD, GLOD o GARLOD. No da video ni señal alguna.
+
+Recuperación: Solo reflasheando NOR/NAND.
+
+
+Glitches Visuales
+
+Cómo provocarlo: Borrar archivos del XMB, la WAVE, o elementos visuales del sistema.
+
+
+Glitches Auditivos
+
+Cómo provocarlo en RPCS3: Instalar firmware 2.80 o menor.
+
+En PS3 real: Borrar archivos .arc relacionados al XMB o sonidos de inicio.
+
+
+"The disk must be formatted"
+
+Cómo provocarlo: Interrumpir o hacer mal el proceso de formateo del HDD/SSD.
+
+
+Códigos de error (800017, 8007E21G)
+
+Causa común: Falta de archivos RAPS, HEN desactivado o CFW dañado.
+
+
+Loop de Inicio
+
+Cómo provocarlo en RPCS3: Borrar todos los archivos excepto vsh.self.
+
+En PS3 real: Corromper archivos de dev_flash relacionados al arranque del XMB.
+
+
+Congelamientos
+
+Descripción: Ocurre al saturar la RAM o CPU. También puede ser por plugins como PS3xPAD.
+
+
+Datos No Compatibles
+
+Descripción: Al insertar un disco de PS2 en modelos no retrocompatibles (CECH-D a CECH-K).
+
+
+Error en la Lectura del Disco
+
+Causa: Disco corrupto, dañado o de formato desconocido. También puede ser por lector dañado.
+
+
+Sesión Cerrada
+
+Descripción: Sucede al cerrar sesión o iniciar HEN por primera vez.
+
+
