@@ -1,4 +1,4 @@
-# Tipos de Errores y Fallos en PS3 / RPCS3
+# Tipos de Errores y Fallos en PS3 / RPCS3 y como causarlos
 
 Una recopilación de errores comunes, bricks y glitches que pueden presentarse en consolas PlayStation 3 físicas y en el emulador RPCS3. Esta lista incluye causas conocidas y formas en que pueden ser simuladas o replicadas con fines educativos.
 
